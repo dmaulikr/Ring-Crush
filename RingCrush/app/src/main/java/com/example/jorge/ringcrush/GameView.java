@@ -79,7 +79,7 @@ public class GameView extends View implements Runnable{
         {
             for(int n = 0; n < 5; n++)
             {
-                rings.add(new Ring(i*100 + 75,n*100 + 150,40,selectColor(random.nextInt(5))));
+                rings.add(new Ring(i*100 + 200,n*100 + 250,40,selectColor(random.nextInt(5))));
             }
         }
     }
@@ -94,6 +94,8 @@ public class GameView extends View implements Runnable{
     @Override
     protected void onDraw(Canvas canvas)
     {
+
+        crushing();
         for(int i = 0; i < rings.size(); i++)
         {
             rings.get(i).Draw(canvas);

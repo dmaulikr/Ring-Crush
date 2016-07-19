@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="hdpi"
+    abi="x86"
+    api-level="16"
+    density="xhdpi"
     format="7"
-    timestamp="121309198533565"
-    token="2969447853816843916"
+    timestamp="363264341827186"
+    token="-8809675009386580095"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="441" />
+        duration="127" />
     <task
         name="instant-run-dex"
-        duration="1085" />
+        duration="573" />
     <task
         name="instant-run-transform"
-        duration="123" />
+        duration="15" />
     <task
         name="verifier"
-        duration="13" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\reload-dex\debug\classes.dex"
+        location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\reload-dex\debug\classes.dex"
         type="RELOAD_DEX" />
 
-    <build timestamp="121116042753452" >
+    <build timestamp="362776881773599" >
         <artifact
-            location="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="121309198533565"
+        timestamp="363182503702923"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\reload-dex\debug\classes.dex"
+            location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\builds\debug\363182503702923\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="363245220874381"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\builds\debug\363245220874381\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="363254615293825"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\builds\debug\363254615293825\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="363264341827186"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\reload-dex\debug\classes.dex"
             type="RELOAD_DEX" />
     </build>
 

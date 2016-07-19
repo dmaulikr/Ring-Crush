@@ -2,60 +2,60 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="6f2281fad8e87d546a7b24f25806d885f23bdd3c">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2bffd6a1c4a3b7f35993a01068000bb46fa116ac\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0_c64347ff91635cbac73baf8396510e86aebea0c0\classes.dex" />
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_15415f68d7f0bb85882758d93b65e90d8cc959e8.jar" />
     </item>
     <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_8f94adf1d456dc5c1b65b09585028e73e12ad375\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_c5a2cd5a83a1861e5efcfcad791afc533ecabf10\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\JORGE\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.0.0\2943c74db6d4346ab8c6531adac91fa05c137c40\support-annotations-24.0.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_8b937d1ce389bb7bc0f7083e0b1663add4088445\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_dbc36e9b9cd653cc37aad09cdb2be22da2f81378\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0_777e242228a793d1d6efda193ad3d2be3765a431\classes.dex" />
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_824f697b50120e965dd699485cbe74e99840bc01.jar" />
     </item>
     <item
-        jar="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="dcde11df6f175751e6aa98a9966346affbd914ee">
-        <dex dex="C:\Users\JORGE\AndroidStudioProjects\RingCrush\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c166366467ccf686ade8c1a4be31d71d0a495483\classes.dex" />
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_016ef9bcdbfbd39421e4258d0ca5f1912fe05415.jar" />
+    </item>
+    <item
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_61d9e659981b15333de5f4b6738d9b8bcd2a0610.jar" />
+    </item>
+    <item
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="24ffe572e2fa9d5c8671d766e1235f434afbb0c6">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_89a925dffd545090cf51cbcfba3fdad60a101c9b.jar" />
+    </item>
+    <item
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_9d051351d0746e777d02afd535cb36e75e0006b3.jar" />
+    </item>
+    <item
+        jar="C:\Users\luis.silva\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.0.0\2943c74db6d4346ab8c6531adac91fa05c137c40\support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_78d1e46f23bae2462d9ad2f0c8b03ea59edc965e.jar" />
+    </item>
+    <item
+        jar="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f5340de02947dbb42ebda30797ed7606eccaed5d">
+        <dex dex="C:\Users\luis.silva\Desktop\GitHub\Ring-Crush\RingCrush\app\build\intermediates\pre-dexed\debug\instant-run_deb81659d94356a2ddefe18300a7c461c8cc9699.jar" />
     </item>
 
 </items>
