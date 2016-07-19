@@ -17,8 +17,7 @@ public class Ring {
         y = Y;
         r = R;
         c = new Paint();
-        c.setColor(C);
-        color = C;
+        setColor(C);
     }
 
     public void setColor(int C)
@@ -37,5 +36,6 @@ public class Ring {
         //+20 e -20 são offsets
         return (cX + 20 > x && cX - 20 < x + r && cY + 20 > y && cY - 20 < y + r);
     }
+
 
 }

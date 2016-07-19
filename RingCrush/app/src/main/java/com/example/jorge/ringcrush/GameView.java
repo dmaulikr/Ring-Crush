@@ -17,6 +17,7 @@ public class GameView extends View implements Runnable{
     public ArrayList<Ring> rings;
     int[] colors;
     Random random;
+    int score;
 
     //variáveis utilizadas para os eventos de Touch e troca de Cor
     int tX,tY,tC,tI;
@@ -73,6 +74,7 @@ public class GameView extends View implements Runnable{
         tY = 0;
         tC = 0;
         tI = 0;
+        score = 0;
         for(int i = 0; i < 5; i++)
         {
             for(int n = 0; n < 5; n++)
@@ -81,7 +83,6 @@ public class GameView extends View implements Runnable{
             }
         }
     }
-
 
     @Override
     public void run()
@@ -103,8 +104,10 @@ public class GameView extends View implements Runnable{
 
                 if(tC != 0)
                 {
-                    rings.get(tI).setColor(rings.get(i).color);
-                    rings.get(i).setColor(tC);
+                    if(changeColors(tI,i))
+                    {
+                        crushing();
+                    }
                     tC = 0;
                     tI = 0;
                 }
@@ -119,4 +122,59 @@ public class GameView extends View implements Runnable{
         invalidate();
     }
 
+    public boolean changeColors(int i1, int i2)
+    {
+        if((i2 == i1 - 5) || (i2 == i1 + 5) || (i2 == i1 - 1) || (i2 == i1 + 1))
+        {
+            rings.get(i1).setColor(rings.get(i2).color);
+            rings.get(i2).setColor(tC);
+            return true;
+        }
+        return false;
+    }
+
+    public void crushing()
+    {
+        for(int i = 0; i < rings.size(); i++)
+        {
+            crush(i,1);
+        }
+    }
+
+    public boolean crush(int index, int count)
+    {
+        if(index + 5 < 25)
+        {
+            if(rings.get(index).color == rings.get(index + 5).color)
+            {
+                if(crush(index + 5,count+1))
+                {
+                    rings.get(index).setColor(selectColor(random.nextInt(5)));
+                    return true;
+                }
+            }
+        }
+
+        if(index + 1 < 25)
+        {
+            if(rings.get(index).color == rings.get(index + 1).color)
+            {
+                if(crush(index + 1,count+1))
+                {
+                    rings.get(index).setColor(selectColor(random.nextInt(5)));
+                    return true;
+                }
+            }
+        }
+
+        if(count >= 3)
+        {
+            rings.get(index).setColor(selectColor(random.nextInt(5)));
+            score++;
+            return true;
+        }
+
+        else
+            return false;
+    }
 }
