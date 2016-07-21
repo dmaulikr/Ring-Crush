@@ -1,8 +1,12 @@
 package com.example.jorge.ringcrush;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -94,7 +98,13 @@ public class GameView extends View implements Runnable{
     @Override
     protected void onDraw(Canvas canvas)
     {
-
+        Bitmap rs = BitmapFactory.decodeResource(this.getResources(),R.drawable.rainbowsquare);
+        Paint p = new Paint();
+        p.setColor(Color.BLACK);
+        canvas.drawRect(105, 155, 105 + 120 * 5, 155 + 120 * 5, p);
+        canvas.drawText("uheuheue", canvas.getWidth()/2,50,p);
+        p.setColor(Color.WHITE);
+        canvas.drawBitmap(getResizedBitmap(rs, 120*5,120*5),105,155,p);
         crushing();
         for(int i = 0; i < rings.size(); i++)
         {
@@ -179,4 +189,20 @@ public class GameView extends View implements Runnable{
         else
             return false;
     }
+
+    public Bitmap getResizedBitmap(Bitmap bm, int newHeight, int newWidth)
+    {
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = ((float) newHeight) / height;
+        // create a matrix for the manipulation
+        Matrix matrix = new Matrix();
+        // resize the bit map
+        matrix.postScale(scaleWidth, scaleHeight);
+        Bitmap resizedBitmap = Bitmap.createBitmap(bm, 0, 0, width, height, matrix, false);
+        return resizedBitmap;
+    }
+
+
 }
