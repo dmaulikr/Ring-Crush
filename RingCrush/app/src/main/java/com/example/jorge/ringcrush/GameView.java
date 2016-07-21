@@ -101,8 +101,10 @@ public class GameView extends View implements Runnable{
         Bitmap rs = BitmapFactory.decodeResource(this.getResources(),R.drawable.rainbowsquare);
         Paint p = new Paint();
         p.setColor(Color.BLACK);
+        p.setTextSize(40);
         canvas.drawRect(105, 155, 105 + 120 * 5, 155 + 120 * 5, p);
-        canvas.drawText("uheuheue", canvas.getWidth()/2,50,p);
+        canvas.drawText("Seus pontos: "+score, canvas.getWidth()/2,50,p);
+
         p.setColor(Color.WHITE);
         canvas.drawBitmap(getResizedBitmap(rs, 120*5,120*5),105,155,p);
         crushing();
@@ -196,9 +198,7 @@ public class GameView extends View implements Runnable{
         int height = bm.getHeight();
         float scaleWidth = ((float) newWidth) / width;
         float scaleHeight = ((float) newHeight) / height;
-        // create a matrix for the manipulation
         Matrix matrix = new Matrix();
-        // resize the bit map
         matrix.postScale(scaleWidth, scaleHeight);
         Bitmap resizedBitmap = Bitmap.createBitmap(bm, 0, 0, width, height, matrix, false);
         return resizedBitmap;
