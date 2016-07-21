@@ -19,5 +19,4 @@ public class MainActivity extends AppCompatActivity {
         sendIntent.putExtra("letter","J4");
         startActivity(sendIntent);
     }
-
 }

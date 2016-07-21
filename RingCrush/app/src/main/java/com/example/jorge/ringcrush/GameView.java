@@ -22,6 +22,7 @@ public class GameView extends View implements Runnable{
     int[] colors;
     Random random;
     int score;
+    Canvas can;
 
     //variáveis utilizadas para os eventos de Touch e troca de Cor
     int tX,tY,tC,tI;
@@ -29,7 +30,6 @@ public class GameView extends View implements Runnable{
     public GameView(Context c)
     {
         super(c);
-        init();
     }
 
     @Override
@@ -70,7 +70,7 @@ public class GameView extends View implements Runnable{
         }
     }
 
-    public void init()
+    public void init(Canvas c)
     {
         rings = new ArrayList<Ring>();
         random = new Random();
@@ -83,7 +83,7 @@ public class GameView extends View implements Runnable{
         {
             for(int n = 0; n < 5; n++)
             {
-                rings.add(new Ring(i*100 + 200,n*100 + 250,40,selectColor(random.nextInt(5))));
+                rings.add(new Ring(i*(c.getWidth()/5) + (c.getWidth()/10),n*(c.getWidth()/5) + 250,(c.getWidth()/10),selectColor(random.nextInt(5))));
             }
         }
     }
@@ -91,22 +91,24 @@ public class GameView extends View implements Runnable{
     @Override
     public void run()
     {
-        handler.postDelayed(this,30);
+        handler.postDelayed(this, 30);
         invalidate();
     }
 
     @Override
     protected void onDraw(Canvas canvas)
     {
+        if(can == null){
+            can = canvas;
+            init(can);
+        }
         Bitmap rs = BitmapFactory.decodeResource(this.getResources(),R.drawable.rainbowsquare);
         Paint p = new Paint();
-        p.setColor(Color.BLACK);
         p.setTextSize(40);
-        canvas.drawRect(105, 155, 105 + 120 * 5, 155 + 120 * 5, p);
-        canvas.drawText("Seus pontos: "+score, canvas.getWidth()/2,50,p);
-
+        p.setTextAlign(Paint.Align.CENTER);
+        canvas.drawText("Seus pontos: " + score, (canvas.getWidth() / 2), 50, p);
+        canvas.drawText("Consiga 30", (canvas.getWidth() / 2), 90,p);
         p.setColor(Color.WHITE);
-        canvas.drawBitmap(getResizedBitmap(rs, 120*5,120*5),105,155,p);
         crushing();
         for(int i = 0; i < rings.size(); i++)
         {
@@ -153,6 +155,11 @@ public class GameView extends View implements Runnable{
         {
             crush(i,1);
         }
+        if(score>30){
+            MainActivity m = new MainActivity();
+            m.gameOver();
+            Log.d("MainActivity","Won!!");
+        }
     }
 
     public boolean crush(int index, int count)
@@ -187,7 +194,6 @@ public class GameView extends View implements Runnable{
             score++;
             return true;
         }
-
         else
             return false;
     }
