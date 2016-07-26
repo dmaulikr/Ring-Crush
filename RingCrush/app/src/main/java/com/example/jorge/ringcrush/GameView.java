@@ -159,6 +159,7 @@ public class GameView extends View implements Runnable{
             MainActivity m = new MainActivity();
             m.gameOver();
             Log.d("MainActivity","Won!!");
+            score = 0;
         }
     }
 
